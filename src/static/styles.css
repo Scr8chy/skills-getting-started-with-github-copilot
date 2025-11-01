@@ -142,3 +142,77 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Participants section styling */
+.participants-section {
+  margin-top: 12px;
+}
+
+.participants-section strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Bulleted list with a subtle box and scroll for long lists */
+.participants-list {
+  list-style: none; /* hide default bullets */
+  padding: 8px 12px;
+  margin: 0;
+  max-height: 120px;
+  overflow-y: auto;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+
+/* small email text inside participant item */
+.participant-email {
+  flex: 1 1 auto;
+  font-size: 14px;
+  color: #333;
+  word-break: break-all;
+}
+
+/* delete button to remove participant */
+.participant-delete {
+  background: transparent;
+  border: none;
+  color: #b00020;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.participant-delete:hover {
+  background-color: rgba(176, 0, 32, 0.08);
+  color: #7f0000;
+}
+
+/* Individual participant items */
+.participant-item {
+  padding: 6px 8px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #fafafa, #fff);
+  font-size: 14px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.participant-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Empty state */
+.no-participants {
+  color: #666;
+  font-style: italic;
+  padding: 6px 0;
+}
